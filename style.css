@@ -68,3 +68,32 @@ body {
 .hidden {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .container {
+    min-height: 100svh;
+    height: auto;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+  }
+
+  .cat-img {
+    width: min(20rem, 70vw);
+    height: auto;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+  }
+
+  .title {
+    font-size: clamp(2.2rem, 7vw, 3rem);
+  }
+
+  .title span {
+    font-size: 1.15em;
+  }
+
+  .btn {
+    max-width: calc(100vw - 2rem);
+    overflow-wrap: anywhere;
+  }
+}
